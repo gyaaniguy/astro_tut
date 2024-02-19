@@ -1,17 +1,9 @@
-// Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
-const handler = async (event) => {
-  try {
-    const subject = event.queryStringParameters.name || 'World'
-    return {
-      statusCode: 200,
-      body: JSON.stringify(event),
-      // // more keys you can return:
-      // headers: { "headerName": "headerValue", ... },
-      // isBase64Encoded: true,
-    }
-  } catch (error) {
-    return { statusCode: 500, body: error.toString() }
-  }
-}
+export default async (req, context) => {
+  const { city, country } = context.params;
 
-module.exports = { handler }
+  return new Response(`You're visiting ${city} in ${country}!`);
+};
+
+export const config = {
+  path: "/travel-guide/:city/:country"
+};
