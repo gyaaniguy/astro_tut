@@ -6,4 +6,15 @@ const title = 'nik astro from index'
 <BaseLayout title={title}>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolore harum nobis quos? Deleniti nihil nostrum odit omnis possimus quidem. Animi deleniti dolore doloremque eligendi fugiat provident quae repellat sapiente?</p>
+
+	<div id="netlify">netlify contents placeholder</div>
+
+	<button hx-get="https://astrotut11.netlify.app/.netlify/functions/h6/"
+			hx-trigger="click"
+			hx-target="#netlify"
+	>
+		Click Me!
+	</button>
+	<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+
 </BaseLayout>
