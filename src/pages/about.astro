@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = "About me nik"
+
+const id =  {
+    name : 'nikhil',
+    country : 'india',
+}
+const skills = ['html','php'];
+const happy = true;
+const finished = false;
+const skillColor = "green";
+const textCase = 'uppercase';
+const fontWeight = 'light';
+---
+
+<BaseLayout title={title}>
+
+
+    <h2>... and my new Astro site!</h2>
+
+    <p>My name is {id.name}. I am from {id.country}</p>
+    <p>I am {happy ? 'happy': 'not'}</p>
+    {finished || <p>My job is unfinished!</p>}
+    <p>My skills are:</p>
+    <ul>
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+
+    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+
+</BaseLayout>
