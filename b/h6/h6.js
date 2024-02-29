@@ -1,10 +1,8 @@
-
-
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 const handler = async (event, context) => {
-  console.log(context)
+  console.log(context);
   try {
-    const subject = event.queryStringParameters.name || 'World'
+    const subject = event.queryStringParameters.name || "World 2";
     return {
       statusCode: 200,
       headers: {
@@ -15,10 +13,10 @@ const handler = async (event, context) => {
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,
-    }
+    };
   } catch (error) {
-    return { statusCode: 500, body: error.toString() }
+    return { statusCode: 500, body: error.toString() };
   }
-}
+};
 
-module.exports = { handler }
+module.exports = { handler };
