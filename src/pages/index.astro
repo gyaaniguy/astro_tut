@@ -1,21 +1,23 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const title = 'nik astro from index'
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "nik astro from index";
 ---
 
 <BaseLayout title={title}>
-	{import.meta.env.HX_GET}
-	`{import.meta.env.HX_GET}/.netlify/functions/h6/`
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolore harum nobis quos? Deleniti nihil nostrum odit omnis possimus quidem. Animi deleniti dolore doloremque eligendi fugiat provident quae repellat sapiente?</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolore harum
+    nobis quos? Deleniti nihil nostrum odit omnis possimus quidem. Animi
+    deleniti dolore doloremque eligendi fugiat provident quae repellat sapiente?
+  </p>
 
-	<div id="netlify">netlify contents placeholder</div>
+  <div id="netlify">netlify contents placeholder</div>
 
-	<button hx-get=`${import.meta.env.HX_GET}/.netlify/functions/h6/`
-			hx-trigger="click"
-			hx-target="#netlify"
-	>
-		Click Me!
-	</button>
-	<script src="https://unpkg.com/htmx.org@1.9.10"></script>
-
+  <button
+    hx-get=`${import.meta.env.HX_GET}/.netlify/functions/h6/`
+    hx-trigger="click"
+    hx-target="#netlify"
+  >
+    Click Me!
+  </button>
+  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
 </BaseLayout>

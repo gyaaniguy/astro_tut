@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="fixed top-0 z-50 w-full bg-white px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="text-xl font-bold">Logo</div>
+        <nav>
+          <a href="#" class="px-3 py-2 text-gray-700 hover:text-gray-900"
+            >Home</a
+          >
+          <a href="#" class="px-3 py-2 text-gray-700 hover:text-gray-900"
+            >About</a
+          >
+          <a href="#" class="px-3 py-2 text-gray-700 hover:text-gray-900"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 py-20 text-center text-white">
+      <h1 class="text-4xl font-bold">Welcome to My Blog</h1>
+      <p class="mt-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </section>
+
+    <!-- Main Section -->
+    <section class="container mx-auto mt-8 px-4">
+      <h2 class="mb-4 text-2xl font-bold">Latest Posts</h2>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Blog Post Card -->
+        <div class="overflow-hidden rounded-lg bg-white shadow-md">
+          <img
+            src="https://via.placeholder.com/400"
+            alt="Blog Post"
+            class="h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="mb-2 text-xl font-bold">Blog Post Title</h3>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              scelerisque varius velit.
+            </p>
+            <a href="#" class="mt-2 inline-block font-bold text-blue-500"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <!-- Repeat this for other posts -->
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 py-4 text-center text-white">
+      &copy; 2024 My Blog
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+---
+
+---
+
+<script>
+  function getTime() {
+    return new Date().toLocaleTimeString([], { timeZone: "Asia/Kolkata" });
+  }
+  setInterval(() => {
+    document.getElementById("curTime").innerHTML = getTime();
+  }, 1000);
+</script>
+<span id="curTime">sd</span>

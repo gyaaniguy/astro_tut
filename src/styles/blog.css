@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .link-primary {
+        @apply text-xl font-light hover:scale-110 text-cyan-400 transition-all duration-500
+    }
+    .link-sec {
+        @apply font-light hover:scale-110 text-cyan-300 transition-all duration-500
+    }
+}

@@ -1,0 +1,207 @@
+---
+import CurTime from "../../components/CurTime.astro";
+import "../../styles/blog.css";
+---
+
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>THis is tailwind tut</title>
+  </head>
+  <body class="flex min-h-screen flex-col bg-blue-50 bg-gradient-to-r">
+    <!-- Header -->
+    <header class="top-0 z-10 w-full bg-blue-900 px-6 py-10">
+      <section class="mx-auto flex max-w-4xl justify-between text-green-200">
+        <div>
+          <h1 class="text-3xl font-semibold">NIKHIL JAIN</h1>
+          <div class="text-right">
+            <span class="opacity-70">- self made </span>💻 😎
+          </div>
+        </div>
+        <div class="flex items-center">
+          <nav class="flex gap-6 text-xl font-light">
+            <a
+              class="p-3 transition-all duration-500 hover:scale-110"
+              href="#work">Work</a
+            >
+            <a
+              class="p-3 transition-all duration-200 hover:scale-110"
+              href="#work">Thoughts</a
+            >
+            <a
+              class="p-3 transition-all duration-200 hover:scale-110"
+              href="#work">Looks</a
+            >
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <main class="flex flex-grow flex-col gap-12">
+      <!-- Hero Section -->
+      <section class="mx-auto my-12 flex max-w-4xl items-center gap-12">
+        <div class="w-1/2">
+          <div class="rounded-xl bg-blue-900 p-3">
+            <div class="my-2 text-left text-sm font-semibold">
+              <span class="rounded-2xl bg-blue-200 p-1 px-2"
+                >if (dev === true)
+              </span>
+            </div>
+            <h1 class="text-3xl font-bold text-green-300">
+              If it ain't broken, <span class="text-green-300">open it up</span>
+              to see
+              <span class="text-green-300">what makes it work</span>
+            </h1>
+          </div>
+          <div
+            class="mt-6 flex flex-col gap-3 rounded-xl bg-blue-900 p-3 text-lg text-green-200"
+          >
+            <!--I am the best kind of nerd: A <span-->
+            <!--  class="font-semibold text-cyan-600">self taught nerd</span-->
+            <!--&gt;<br />-->
+            <div class="mt-2">
+              My love for tinkering grew into a professional career of creating
+              websites, scripts, applications.
+            </div>
+            <div class="text-green-300">
+              Keenly aware how this humble webdev can affect the lives of
+              billions.
+            </div>
+            Looking to reach higher...
+          </div>
+        </div>
+        <div class="w-1/2"><img src="/img/rocketcomputer.png" /></div>
+      </section>
+      <hr
+        class="border-gradient mx-auto my-4 w-1/2 rounded-md border from-yellow-400 to-red-500 shadow-md shadow-blue-500"
+      />
+      <section class="container mx-auto my-6 max-w-4xl">
+        <h2 class="my-12 text-center text-5xl font-light text-cyan-950">
+          Latest Thoughts
+        </h2>
+        <div class="grid grid-cols-3">
+          <div
+            class="m-6 max-w-lg border border-cyan-200 bg-gray-50 text-gray-800"
+          >
+            <div class="flex h-44 items-center">
+              <img
+                class=""
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?"
+              />
+            </div>
+            <div class="space-y-4 p-2">
+              <div class="overflow-hidden">
+                <a href="#" class="link-sec font-semibold text-cyan-700">
+                  Worlds guide to install and setup ZSH - a bash alternative
+                </a>
+              </div>
+              <p class="text-sm text-cyan-900">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repellat, excepturi. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Repellat, excepturi.
+              </p>
+            </div>
+          </div><div
+            class="m-6 max-w-lg border border-cyan-200 bg-gray-50 text-gray-800"
+          >
+            <div class="h-44 w-full">
+              <img class="x" src="/img/omz-ansi-github.png" />
+            </div>
+            <div class="space-y-4 p-2">
+              <div class="">
+                <a href="#" class="link-sec font-semibold text-cyan-700">
+                  Worlds simplest and greatest guide to install and setup ZSH -
+                  a bash alternative
+                </a>
+              </div>
+              <p class="text-sm text-cyan-900">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repellat, excepturi. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Repellat, excepturi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <!-- Footer Section -->
+  <footer class="w-full bg-blue-900 p-12 text-gray-200">
+    <section class="m-3 mx-auto flex max-w-4xl justify-between">
+      <div class="flex flex-col gap-3 rounded-xl bg-sky-500/10 p-6">
+        <div class="flex flex-col gap-1">
+          <h2 class="mb-2 text-xl text-green-400">Skills:</h2>
+          <ul class="flex flex-col gap-1">
+            <li>php</li>
+            <li>javascript</li>
+            <li>sql</li>
+            <li>zsh / *nix</li>
+            <li>docker / git</li>
+            <li>agile / scrum</li>
+            <li>html / css / tailwind</li>
+            <li>node / vue</li>
+            <li>team player</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 rounded-xl bg-sky-500/10 p-6">
+        <div class="flex flex-col gap-1">
+          <h4 class="mb-2 text-2xl text-green-400">Links</h4>
+          <h2 class="text-lg text-emerald-200">Social:</h2>
+          <nav class="flex flex-col gap-1">
+            <div>
+              Github: <a class="link-sec" href="https://github.com/gyaaniguy"
+                >@gyaaniguy</a
+              >
+            </div>
+            <div>
+              Upwork: <a
+                class="link-sec"
+                href="https://www.upwork.com/freelancers/~012437181ba75e4265"
+                >@nikhiljain</a
+              >
+            </div>
+
+            <div>
+              Linkedin: <a
+                class="link-sec"
+                href="https://www.upwork.com/freelancers/~012437181ba75e4265"
+                >@nikhiljain</a
+              >
+            </div>
+          </nav>
+        </div>
+        <div class="flex flex-col gap-1">
+          <h2 class="text-lg text-emerald-200">Best of:</h2>
+          <nav class="flex list-none flex-col">
+            <a href="/blog/zsh" class="link-sec">Zsh > bash</a>
+            <a href="/blog/zsh" class="link-sec">Things to buy</a>
+          </nav>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 rounded-xl bg-sky-500/10 p-6">
+        <h2 class="mb-2 text-2xl text-green-400">Contact</h2>
+
+        <div class="flex flex-col">
+          <h4 class="text-lg text-emerald-200">Email:</h4>
+          <a href="#" class="link-primary">nik.jain@gmail.com</a>
+        </div>
+        <div>
+          <h4 class="text-lg text-emerald-200">Address:</h4>
+          Delhi, India
+        </div>
+        <div>
+          <h4 class="text-lg text-emerald-200">Time:</h4>
+          <CurTime /> (UTC + 5:30)
+        </div>
+      </div>
+    </section>
+  </footer>
+</html>
